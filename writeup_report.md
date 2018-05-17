@@ -1,11 +1,3 @@
-# **Behavioral Cloning**
-
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Behavioral Cloning Project**
 
 The goals / steps of this project are the following:
@@ -80,13 +72,13 @@ In order to gauge how well the model was working, I split my image and steering 
 
 So I decide to change the model to the nvidia's model.At first ,I got a strange graph about the trainning loss like bellow.
 
-![graph/loss_graph_before.png][image1]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/loss_graph_before.png][image1]
 
 After asking people in the slack,I realized that I made a mistake in the 'fit_generator' function.I didn't change the 'setps_per_epoch' after I used other two camera's data and used the flip function to augument the data.
 
 After fixing it up,I got a good result similar to this bellow.And this mistake really confused me for a lot of days and made me delay for the recommand dead line.
 
-![graph/loss_graph_after.png][image2]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/loss_graph_after.png][image2]
 
 The final step was to run the simulator to see how well the car was driving around track one.
 
@@ -102,13 +94,13 @@ architecture is the same as the nvidia's model.
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![graph/center][image3]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center.jpg][image3]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![graph/side_to_center1][image4]
-![graph/side_to_center2][image5]
-![graph/side_to_center3][image6]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center1.jpg][image4]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center2.jpg][image5]
+![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center3.jpg][image6]
 
 
 After the collection process, I had about 30000 number of data points. I then preprocessed this data by cropping the data to reduce the redundant information.
