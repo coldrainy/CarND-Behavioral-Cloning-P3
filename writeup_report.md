@@ -74,7 +74,7 @@ So I decide to change the model to the nvidia's model.At first ,I got a strange 
 
 ![image1](/graph/loss_graph_before.png)
 
-After asking people in the slack,I realized that I made a mistake in the 'fit_generator' function.I didn't change the 'setps_per_epoch' after I used other two camera's data and used the flip function to augument the data.
+After asking people in the slack,I realized that I made a mistake in the '''fit_generator''' function.I didn't change the '''setps_per_epoch''' after I used other two camera's data and used the flip function to augument the data.
 
 After fixing it up,I got a good result similar to this bellow.And this mistake really confused me for a lot of days and made me delay for the recommand dead line.
 
@@ -96,7 +96,7 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![image3](/graph/center.jpg)
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to recovery if it went to the side :
 
 ![image4](/graph/side1.jpg)
 ![image5](/graph/side2.jpg)
