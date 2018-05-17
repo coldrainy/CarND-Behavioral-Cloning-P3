@@ -72,13 +72,13 @@ In order to gauge how well the model was working, I split my image and steering 
 
 So I decide to change the model to the nvidia's model.At first ,I got a strange graph about the trainning loss like bellow.
 
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/loss_graph_before.png][image1]
+![image1](/graph/loss_graph_before.png)
 
 After asking people in the slack,I realized that I made a mistake in the 'fit_generator' function.I didn't change the 'setps_per_epoch' after I used other two camera's data and used the flip function to augument the data.
 
 After fixing it up,I got a good result similar to this bellow.And this mistake really confused me for a lot of days and made me delay for the recommand dead line.
 
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/loss_graph_after.png][image2]
+![image2](/graph/loss_graph_after.png)
 
 The final step was to run the simulator to see how well the car was driving around track one.
 
@@ -94,16 +94,16 @@ architecture is the same as the nvidia's model.
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center.jpg][image3]
+![image3](/graph/center.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center1.jpg][image4]
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center2.jpg][image5]
-![https://github.com/coldrainy/CarND-Behavioral-Cloning-P3/blob/master/graph/center3.jpg][image6]
+![image4](/graph/center1.jpg)
+![image5](/graph/center2.jpg)
+![image6](/graph/center3.jpg)
 
 
-After the collection process, I had about 30000 number of data points. I then preprocessed this data by cropping the data to reduce the redundant information.
+After the collection process, I had about 30000 number of data points.  I then preprocessed this data by cropping the data to reduce the redundant information.
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
